@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+
+    "name": "WebTimer",
+    "description": "This extension aims at improving the productivity of the user",
+    "version": "1",
+
+
+    "background": {
+        "scripts": ["js/background.js" , "js/jquery.min.js"]
+    },
+
+    "chrome_url_overrides":{
+        "newtab" : "index.html"
+    },
+
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
